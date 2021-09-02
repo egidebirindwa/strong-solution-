@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    
+    <!-- Description sur moteur de recherche-->
+<meta name="description" content=" Vous êtes dans la ville de goma et vous cherchez des electriciens, électroniciens ou informaticien pour vos travaux ? Passé chez strong-tech/goma et vous ne serez pas deçu. "/>
+
+
+<!-- propriétaire du site-->
+<meta name="author" content="Egide BIRINDWA" />
+
+<meta name="copyright" content="Egide birindwa" />
+
+
+  <!-- Orthographe--> 
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+  <!-- ZOOM PAGE WEB-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ 
+  <meta name="viewport" content="width=device-width, minimum-scale=0.25"/>
+ 
+ 
+  <meta name="viewport" content="width=device-width, maximum-scale=5.0"/>
+     
+  
+    
+      <title>Installation luminaires et maintenance électrique.</title>
+</head>
+
+<body>
+   <style>
+body {
+    margin: 1;
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.9);
+   overflow-x: hidden;
+   transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than
+450 pixels, this will change the font-size of
+the links and position the close button again,
+so they don't overlap */ 
+
+@media screen and (max-height:450px){
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+</style>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class=
+  "closebtn"
+
+  onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Accueil</a>
+    <a href="Services.html">Services</a>
+    <a href="À_propos.html">A propos</a>
+    <a href="indexa.php">Se connecter</a>
+    <a href="register.php">S'inscrire</a>
+    <a href="Contactez-nous.html">Contact</a>
+  </div>
+</div>
+
+<span style="font-size:50px;cursor:
+pointer"
+
+onclick="openNav()">&#9776;
+</span>
+
+<script>
+function openNav() {
+ document.getElementById("myNav")
+ .style.width = "100%";
+}
+
+function closeNav() {
+ document.getElementById("myNav")
+ .style.width = "0%";
+}
+
+</script>
+ 
+  
+
+<style>
+  /* Custom properties/variables  */
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* A few media query to set some font sizes at different screen sizes.
+ * This helps automate a bit of responsiveness.
+ * The trick is to use the rem unit for size values, margin and padding.
+ * Because rem is relative to the document font size
+ * when we scale up or down the font size on the document
+ * it will affect all properties using rem units for the values.
+*/
+
+/* I am using the em unit for breakpoints
+ * The calculation is the following
+ * screen size divided by browser base font size
+ * As an example: a breakpoint at 980px
+ * 980px / 16px = 61.25em
+*/
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* Base styles */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-white);
+}
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+
+
+
+
+/* Welcome section */
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.welcome-section > p {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--main-red);
+}
+
+/* Projects section */
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-blue);
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+}
+
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 4rem;
+  }
+}
+
+/* "Automagic" image grid using no media queries */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.code {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #ff7f50;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.btn-show-all {
+  font-size: 2rem;
+  background: var(--main-gray);
+  transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+  background: var(--main-red);
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+/* Contact section */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: var(--main-gray);
+}
+
+.contact-section-header > h2 {
+  font-size: 6rem;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+.contact-section-header > p {
+  font-style: italic;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+/* Footer */
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: var(--main-gray);
+  border-top: 4px solid var(--main-red);
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+</style>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+	integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+<!-- START WELCOME SECTION -->
+
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+  .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+  @-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+  <h2><font color="orange">Contemplez plus de nouveautés</font></h2>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="/électricité/E3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="/électricité/S.jpg" style="width:100%; background-size:cover;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="/électricité/S1.jpg" style="width:100%; background-size:contain;">
+  <div class="text"></div>
+</div>
+
+  
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script type="text/JavaScript">
+ 
+  var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}   
+   
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+
+
+<!-- END WELCOME SECTION -->
+
+<!-- START PROJECTS SECTION -->
+
+<section id="projects" class="projects-section"><a href="Contactez-nous.html">
+	<h2 class="projects-section-header"><font color="orange">Contacter Nos Meilleurs Electriciens</a></font></h2>
+
+	<div class="projects-grid">
+		<a href="/électricité/S2.jpg" target="_blank" class="project project-tile">
+			<img
+        class="project-image"
+        src="/électricité/S2.jpg"
+        alt="project"
+      />
+			<p class="project-title">
+				<span class="code">&lt;</span>
+				Maintenance d'un climatiseur LG
+				<span class="code">&#47;&gt;</span>
+			</p>
+		</a>
+		<a href="/électricité/s3.jpg" target="_blank" class="project project-tile">
+			<img
+        class="project-image"
+        src="/électricité/s3.jpg"
+        alt="project"
+      />
+			<p class="project-title">
+				<span class="code">&lt;</span>
+				Installation parafoudre
+				<span class="code">&#47;&gt;</span>
+			</p>
+		</a>
+		<a href="/électricité/S4.jpg" target="_blank" class="project project-tile">
+			<img
+        class="project-image"
+        src="/électricité/S4.jpg"
+        alt="project"
+      />
+			<p class="project-title">
+				<span class="code">&lt;</span>
+				Disjoncteurs C16-C32 avec parafoudre
+				<span class="code">&#47;&gt;</span>
+			</p>
+		</a>
+		<a href="/électricité/S5.jpg" target="_blank" class="project project-tile">
+			<img
+        class="project-image"
+        src="/électricité/S5.jpg"
+        alt="project"
+      />
+			<p class="project-title">
+				<span class="code">&lt;</span>
+				spot light avec lumière caché
+				<span class="code">&#47;&gt;</span>
+			</p>
+		</a>
+		<a href="/électricité/S6.jpg" target="_blank" class="project project-tile">
+			<img
+        class="project-image"
+        src="/électricité/S6.jpg"
+        alt="project"
+      />
+			<p class="project-title">
+				<span class="code">&lt;</span>
+				Installation Domestique
+				<span class="code">&#47;&gt;</span>
+			</p>
+		</a>
+		<a href="/électricité/l1.jpg" target="_blank" class="project project-tile">
+			<img
+        class="project-image"
+        src="/électricité/L1.jpg"
+        alt="project"
+      />
+			<p class="project-title">
+				<span class="code">&lt;</span>
+				Installation domestique
+				<span class="code">&#47;&gt;</span>
+			</p>
+		</a>
+	</div>
+
+	<a href="Voir_Plus1.html" class="btn btn-show-all" target="_blank">Voir plus<i class="fas fa-chevron-right"></i></a>
+</section>
+
+<!-- END PROJECTS SECTION -->
+
+<!-- START CONTACT SECTION -->
+
+	<footer class="footer-distributed">
+
+
+
+		<div class="footer-left">
+			<img src="/informatique/A.jpg">
+			<h2>A propos </h2><span><font color=" #818181 ">Strong solution in electricity</font></span>
+
+			<p class="footer-links">
+				<a href="Index.html">Accueil</a>
+			|
+				<a href="/login/index.php">Blog</a>
+				|
+				<a href="À_propos.html">À propos</a>
+				|
+				<a href="Contactez-nous.html">Contacter-nous</a>
+			</p>
+
+			<font color=" #818181">© 2021 Strongelec-goma privacy Solutions Pvt. Ltd.</font>
+		</div>
+
+		<div class="footer-center">
+			<div>
+				<i class="fa fa-map-marker"></i>
+				<p><span>26 - Rd-congo,
+						 Sector - 1</span>
+					Nord-kivu/ Goma/ Himbi musée 6</p>
+			</div>
+
+				<div>
+				<i class="fa fa-phone"></i>
+				<a href="tel:+24397-46-77-473" target="_blank">
+				<p><font color=" 0F9DE8">  +243 974677473</font></p></a>
+			</div>
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p><a href="mailto: strongsolutiongoma@gmail.com"><font color=" 0F9DE8">strongsolutiongoma@gmail.com</font></a></p>
+				
+				
+					<a href="Conditions_d'utilisation.html"><font color=" #0F9DE8">Conditions d'utilisations</a></font>
+				
+				
+					<p><a href="Politique_de_confidentialité.html"><font color=" #0F9DE8">  Politique de confidentialité</font></a></p>
+				
+			
+					<p><a href="Egidebirindwa.html"><font color="     0F9DE8">Contacter le développeur</font></a></p>
+				
+			</div>
+		</div>
+	
+		
+	</footer>
+
+
+
+
+
+
+
+
+
+<!-- END CONTACT SECTION -->
+
+<!-- START FOOTER SECTION -->
+
+
+
+
+
+<footer>
+	
+		<div class="footer-right">
+			<font color=" #818181 ">
+				<span> À propos de l'association</span>
+				Nous Offrons des meilleurs services dans la Maintenance ,installations électriques, Électroniques et Informatiques.</font></b>
+			</div>
+				
+</footer>
+</body>
+
+</html>
